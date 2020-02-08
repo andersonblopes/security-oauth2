@@ -17,7 +17,7 @@ public class CarController {
     private CarRepository carRepository;
 
     @GetMapping
-    public List<Car> test() {
+    public List<Car> listAll() {
         return carRepository.findAll();
     }
 }
