@@ -18,8 +18,6 @@ public class CarController {
 
     @GetMapping
     public List<Car> test() {
-        Car car = new Car(1L, "Ferrari", 2020);
-        carRepository.save(car);
         return carRepository.findAll();
     }
 }
